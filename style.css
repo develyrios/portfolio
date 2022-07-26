@@ -1,0 +1,213 @@
+:root {
+    --noto: 'Noto Sans', sans-serif;
+    --azul: #7BDFF2;
+    --ciano: #B2F7EF;
+    --branco: #FAF9F7;
+    --rosa: #F7D6E0;
+    --lilas: #F2B5D4;
+    --amarelo: #FFFCAC;
+    --amarelo-escuro: #FFE27C;
+    --preto: #000000;
+}
+
+body {
+    font-family: var(--noto);
+    background-color: var(--branco);
+}
+
+.titulo {
+    font-weight: 600;
+    font-size: 48px;
+    text-align: center;
+}
+
+.texto {
+    font-weight: 400;
+    font-size: 22px;
+    text-align: justify;
+}
+
+header {
+    background-image: url('./imgs/losangos-header.svg');
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    height: 20rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 4rem;
+}
+
+.fotoPerfil {
+    width: 10rem;
+    margin-top: 1.5rem;
+}
+
+.caixa__introducao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 0.5rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 3rem;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+
+    width: 90vw;
+
+    border-style: solid;
+    border-width: 0.25rem;
+    border-radius: 10px;
+
+    padding: 1.5rem;
+}
+
+.section__caixa {
+    border-style: solid;
+    border-width: 0.25rem;
+    border-radius: 10px;
+    
+    min-width: 60vw;
+    padding: 0.5rem 0.75rem;
+
+    display: flex;
+    align-content: center;
+
+    background-color: var(--branco);
+    border-color: var(--preto);
+}
+
+.icone {
+    width: 2.5rem;
+}
+
+.section__texto {
+    font-weight: 400;
+    font-size: 36px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.linguagens__html {
+    background-color: var(--rosa);
+    border-color: var(--lilas);
+}
+
+.linguagens__css {
+    background-color: var(--ciano);
+    border-color: var(--azul);
+}
+
+.linguagens__js {
+    background-color: var(--amarelo);
+    border-color: var(--amarelo-escuro);
+}
+
+.section__link {
+    text-decoration: none;
+    color: var(--preto);
+    transition: 200ms;
+}
+
+.section__link:hover {
+    transform: scale(1.1);
+}
+
+.section__link:active {
+    transform: scale(0.9);
+}
+
+.textoMaior {
+    padding-left: 1.5rem;
+}
+
+.redes__caixa {
+    width: 75vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    background-image: url('./imgs/losangos-footer.svg');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+
+    height: 10rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .texto {
+    text-align: center;
+    margin: 0 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        height: 13.5rem;
+
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fotoPerfil {
+        width: 10rem;
+        margin-top: 0;
+    }
+
+    main {
+        row-gap: 10rem;
+    }
+
+    .titulo {
+        width: 100%;
+    }
+
+    .section {
+        width: 75vw;
+
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        row-gap: 3rem;
+    }
+
+    .section__caixa {
+        min-width: 40vw;
+    }
+
+    .section:last-child {
+        justify-content: center;
+        column-gap: 4rem;
+    }
+
+    .redes__caixa {
+        width: 35vw;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .section__caixa {
+        min-width: 20vw;
+    }
+}

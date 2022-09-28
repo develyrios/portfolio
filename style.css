@@ -7,12 +7,18 @@
     --lilas: #F2B5D4;
     --amarelo: #FFFCAC;
     --amarelo-escuro: #FFE27C;
-    --preto: #000000;
+    --preto: #1E1E1E;
+    --neo-azul: #A7DFE2;
+    --neo-ciano: #BCFBFF;
 }
 
 body {
     font-family: var(--noto);
-    background-image: url('./imgs/nuvens.svg');
+    background-image: url('./imgs/bg-black-white.svg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .tituloMaior {
@@ -40,10 +46,6 @@ strong {
 }
 
 header {
-    background-image: url('./imgs/losangos-header.svg');
-    background-repeat: no-repeat;
-    background-position: top center;
-
     height: 20rem;
 
     display: flex;
@@ -51,11 +53,21 @@ header {
     align-items: center;
     justify-content: space-between;
 
-    margin-bottom: 2rem;
+    margin: 2rem auto;
+    padding: 1.5rem;
+
+    border-style: solid;
+    border-width: 0.2rem;
+    border-radius: 10px;
+    box-shadow: 0 0.125rem 0.2rem rgb(0 0 0 / 33%);
+
+    background-color: var(--branco);
+    border-color: var(--preto);
+
+    width: 90vw;
 }
 
 .fotoPerfil {
-    margin-top: 1.5rem;
     width: 10rem;
 }
 
@@ -128,18 +140,18 @@ main {
 }
 
 .linguagens__html {
-    background-color: var(--rosa);
-    border-color: var(--lilas);
+    background-color: var(--neo-ciano);
+    border-color: var(--neo-azul);
 }
 
 .linguagens__css {
-    background-color: var(--ciano);
-    border-color: var(--azul);
+    background-color: var(--neo-ciano);
+    border-color: var(--neo-azul);
 }
 
 .linguagens__js {
-    background-color: var(--amarelo);
-    border-color: var(--amarelo-escuro);
+    background-color: var(--neo-ciano);
+    border-color: var(--neo-azul);
 }
 
 .iconeAlura {
@@ -179,12 +191,7 @@ main {
 }
 
 footer {
-    background-image: url('./imgs/losangos-footer.svg');
-    background-repeat: no-repeat;
-    background-position: bottom center;
-
-    height: 10rem;
-
+    margin: 0 auto 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -204,6 +211,8 @@ footer .texto {
         flex-direction: row;
         align-items: center;
         justify-content: center;
+
+        width: 75vw;
     }
 
     .fotoPerfil {
@@ -216,6 +225,10 @@ footer .texto {
 }
 
 @media screen and (min-width: 1280px) {
+    header {
+        width: 60vw;
+    }
+    
     main {
         flex-direction: row;
         flex-wrap: wrap;

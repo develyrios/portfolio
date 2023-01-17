@@ -139,17 +139,7 @@ main {
     text-align: center;
 }
 
-.linguagens__html {
-    background-color: var(--neo-ciano);
-    border-color: var(--neo-azul);
-}
-
-.linguagens__css {
-    background-color: var(--neo-ciano);
-    border-color: var(--neo-azul);
-}
-
-.linguagens__js {
+.linguagens {
     background-color: var(--neo-ciano);
     border-color: var(--neo-azul);
 }

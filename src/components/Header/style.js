@@ -8,15 +8,9 @@ export const Container = styled.div`
     column-gap: 32px;
     justify-content: center;
 
-    /* @media screen and (min-width: 768px) {
-        header {
-            height: 13.5rem;
-
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-        }
-    } */
+    @media (max-width: 1100px) {
+        grid-column: 1 / span 3;
+    }
 `
 
 export const Infobox = styled.div`

@@ -19,18 +19,9 @@ export default createGlobalStyle`
     }
 
     html{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     }
-
-    body {
-        width: 1100px;
-        min-height: 100vh;
-        margin: 0 auto;
-        padding: 16px 0;
-    }
-
-    /* @todo media query do body para telas menores */
 
     button {
     cursor: pointer;
@@ -45,6 +36,11 @@ export default createGlobalStyle`
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
+
+        margin: 0 auto;
+        min-height: 100vh;
+        padding: 16px 0;
+        width: 1100px;
     }
 
     #root {
@@ -54,6 +50,17 @@ export default createGlobalStyle`
 
         > div {
             background-color: var(--branco);
+        }
+    }
+
+    @media (max-width: 1100px) {
+        body {
+            width: 90%;
+        }
+        
+        #root {
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 8px;
         }
     }
 

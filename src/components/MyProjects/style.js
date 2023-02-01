@@ -7,11 +7,20 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     row-gap: 8px;
+
+    @media (max-width: 1100px)  {
+        grid-column: 1 / span 4;
+    }
 `
 
 export const ProjectsGroup = styled.div`
     display: flex;
-    column-gap: 16px;
+    gap: 16px;
+    flex-wrap: wrap;
+
+    @media (max-width: 1100px)  {
+        gap: 8px;
+    }
 `
 
 export const ProjectBox = styled.div`
@@ -22,14 +31,19 @@ export const ProjectBox = styled.div`
     flex-direction: column;
     row-gap: 8px;
 
-    width: 25%
+    width: 255px;
+
+    @media (max-width: 1100px)  {
+        width: calc(50% - 4px);
+    }
 `
 
 export const ContentRow = styled.div`
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    column-gap: 8px;
+    gap: 8px;
 
     img {
         height: 16px;

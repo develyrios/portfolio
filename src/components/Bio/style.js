@@ -8,4 +8,10 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media (max-width: 1100px)  {
+        grid-column: 1 / span 4;
+        grid-row: auto;
+        row-gap: 8px;
+    }
 `

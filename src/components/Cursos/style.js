@@ -8,12 +8,22 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     row-gap: 8px;
+
+    @media (max-width: 1100px)  {
+        grid-column: 1 / span 4;
+        grid-row: auto;
+    }
 `
 
 export const CursosGroup = styled.div`
     display: flex;
-    column-gap: 8px;
+    gap: 16px;
+    flex-wrap: wrap;
     justify-content: center;
+
+    @media (max-width: 1100px)  {
+        gap: 8px;
+    }
 `
 
 export const CursoBox = styled.div`

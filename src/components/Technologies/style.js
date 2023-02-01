@@ -8,11 +8,17 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     row-gap: 8px;
+
+    @media (max-width: 1100px)  {
+        grid-column: 1 / span 4;
+        grid-row: auto;
+    }
 `
 
 export const TechnologiesGroup = styled.div`
     display: flex;
-    column-gap: 8px;
+    gap: 8px;
+    flex-wrap: wrap;
     justify-content: center;
 `
 

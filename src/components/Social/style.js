@@ -7,6 +7,10 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     row-gap: 8px;
+
+    @media (max-width: 1100px) {
+        grid-column: 4 / span 1;
+    }
 `
 
 export const SocialLinks = styled.div`
@@ -33,5 +37,14 @@ export const SocialLinks = styled.div`
     svg {
         width: 100%;
         height: 100%;
+    }
+
+    @media (max-width: 1100px) {
+        column-gap: 8px;
+
+        a {
+            height: 24px;
+            width: 24px;
+        }
     }
 `

@@ -7,6 +7,7 @@ import aquiexpress from "../../assets/preview-aquiexpress.svg"
 import adopet from "../../assets/preview-adopet.svg"
 import tal from "../../assets/preview-tal.svg"
 import sg from "../../assets/preview-sg.svg"
+import bevVerso from "../../assets/preview-bev-verso.svg"
 
 export  const MyProjects = () => {
     return (
@@ -14,6 +15,33 @@ export  const MyProjects = () => {
             <Title1>Projetos</Title1>
 
             <ProjectsGroup>
+                <ProjectBox className="border-minor border-shadow-minor">
+                    <img src={bevVerso} />
+
+                    <Title2>Bev verso</Title2>
+
+                    <Paragraph>
+                        Meu laboratório de testes. Aqui documento fundamentos e faço treinos de
+                        trechos de códigos e funcionalidades isoladas para usar em projetos maiores.
+                    </Paragraph>
+
+                    <ContentRow>
+                        <a  href="https://bev-verso.vercel.app/" target="_blank" className="border-minor border-shadow-minor">
+                            <BsLink45Deg />
+                            <Span>Link</Span>
+                        </a>
+
+                        <a  href="https://github.com/develyrios/bev-verso" target="_blank" className="border-minor border-shadow-minor">
+                            <BsGithub />
+                            <Span>Repositório</Span>
+                        </a>
+                    </ContentRow>
+
+                    <ContentRow>
+                        <FaReact />
+                    </ContentRow>
+                </ProjectBox>
+
                 <ProjectBox className="border-minor border-shadow-minor">
                     <img src={aquiexpress} />
 

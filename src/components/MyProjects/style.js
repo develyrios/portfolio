@@ -15,26 +15,26 @@ export const Container = styled.div`
 
 export const ProjectsGroup = styled.div`
     display: flex;
-    gap: 16px;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 
     @media (max-width: 1100px)  {
-        gap: 8px;
+        gap: 16px;
     }
 `
 
 export const ProjectBox = styled.div`
-    background-color: var(--ciano);
+    background-color: var(--principal);
     padding: 16px;
 
     display: flex;
     flex-direction: column;
     row-gap: 8px;
 
-    width: 255px;
+    width: 270px;
 
-    @media (max-width: 1100px)  {
-        width: calc(50% - 4px);
+    p {
+        flex-grow: 1;
     }
 `
 
@@ -50,7 +50,7 @@ export const ContentRow = styled.div`
     }
 
     a {
-        background-color: var(--azul);
+        background-color: var(--branco);
         color: var(--preto);
         padding: 4px 8px;
         transition: 250ms;

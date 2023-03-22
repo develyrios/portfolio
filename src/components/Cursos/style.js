@@ -27,8 +27,8 @@ export const CursosGroup = styled.div`
 `
 
 export const CursoBox = styled.div`
-    background-color: var(--ciano);
-    padding: 4px 8px;
+    background-color: var(--principal);
+    padding: 8px;
 
     display: flex;
     flex-direction: column;

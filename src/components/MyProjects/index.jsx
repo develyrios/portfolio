@@ -5,8 +5,6 @@ import { FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa"
 import { SiJavascript, SiTypescript } from "react-icons/si"
 import aquiexpress from "../../assets/preview-aquiexpress.svg"
 import adopet from "../../assets/preview-adopet.svg"
-import tal from "../../assets/preview-tal.svg"
-import sg from "../../assets/preview-sg.svg"
 import bevVerso from "../../assets/preview-bev-verso.svg"
 
 export  const MyProjects = () => {

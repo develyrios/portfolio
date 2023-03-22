@@ -7,8 +7,8 @@ export const Header = () => {
         <Container className="border-major border-shadow-major">
             <img 
                 src={profilePicture}
-                alt="Foto de Bev. Pessoa de pele branca, cabelo castanho, blusa
-                preta de gola alta e fundo sólido azul."/>
+                alt="Foto de Bev. Pessoa de pele branca, cabelo preto e blusa
+                preta de gola alta."/>
 
             <Infobox>
                 <Title1>Bev Feitosa</Title1>

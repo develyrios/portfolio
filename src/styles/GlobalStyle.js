@@ -1,14 +1,11 @@
 import { createGlobalStyle } from "styled-components"
-import backgroundBW from "../assets/background-black-white.svg"
-import backgroundBlue from "../assets/background-blue.svg"
 
 export default createGlobalStyle`
     :root {
         --ubuntu: 'Ubuntu', sans-serif;;
-        --azul: #7BDFF2;
         --branco: #FFFFFF;
-        --ciano: #B2F7EF;
         --preto: #000000;
+        --principal: #d7f3fb;
     }
 
     * {
@@ -32,8 +29,14 @@ export default createGlobalStyle`
     }
 
     body {
-        background-image: url(${backgroundBW});
-        background-repeat: no-repeat;
+        background-color:hsla(166,100%,94%,1);
+        background-image:
+        radial-gradient(at 71% 34%, hsla(36,44%,90%,0.62) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, hsla(299,44%,90%,0.53) 0px, transparent 50%),
+        radial-gradient(at 2% 97%, hsla(270,44%,90%,1) 0px, transparent 50%),
+        radial-gradient(at 40% 20%, hsla(206,44%,90%,1) 0px, transparent 50%),
+        radial-gradient(at 96% 100%, hsla(218,44%,90%,1) 0px, transparent 50%),
+        radial-gradient(at 0% 0%, hsla(175,44%,90%,0.52) 0px, transparent 50%);
         background-size: cover;
         background-attachment: fixed;
 
@@ -49,7 +52,7 @@ export default createGlobalStyle`
         grid-gap: 16px;
 
         > div {
-            background-color: var(--branco);
+            background: #fff
         }
     }
 
@@ -65,7 +68,7 @@ export default createGlobalStyle`
     }
 
     .border-minor {
-        border-radius: 4px;
+        border-radius: 8px;
     }
     
     .border-major {
@@ -73,10 +76,10 @@ export default createGlobalStyle`
     }
     
     .border-shadow-minor {
-        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
     }
     
     .border-shadow-major {
-        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+        box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
     }
 `

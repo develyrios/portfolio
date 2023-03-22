@@ -23,8 +23,8 @@ export const TechnologiesGroup = styled.div`
 `
 
 export const TechnologyBox = styled.div`
-    background-color: var(--ciano);
-    padding: 4px 8px;
+    background-color: var(--principal);
+    padding: 8px;
 
     display: flex;
     column-gap: 4px;

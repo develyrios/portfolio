@@ -6,6 +6,7 @@ import { SiJavascript, SiTypescript } from "react-icons/si"
 import aquiexpress from "../../assets/preview-aquiexpress.svg"
 import adopet from "../../assets/preview-adopet.svg"
 import bevVerso from "../../assets/preview-bev-verso.svg"
+import ciaa from "../../assets/preview-ciaa.svg"
 
 export  const MyProjects = () => {
     return (
@@ -65,6 +66,32 @@ export  const MyProjects = () => {
                     <ContentRow>
                         <FaReact />
                         <SiTypescript />
+                    </ContentRow>
+                </ProjectBox>
+
+                <ProjectBox className="border-minor border-shadow-minor">
+                    <img src={ciaa} />
+
+                    <Title2>CIAA - Site Oficial</Title2>
+
+                    <Paragraph>
+                        Site feito pra uma comunidade do twitter. Nele foram usados conhecimentos de Desing Thinking, Git Flow, Conventional Commits e SCRUM.
+                    </Paragraph>
+
+                    <ContentRow>
+                        <a  href="https://ciaa.vercel.app/" target="_blank" className="border-minor border-shadow-minor">
+                            <BsLink45Deg />
+                            <Span>Link</Span>
+                        </a>
+
+                        <a  href="https://github.com/develyrios/ciaa" target="_blank" className="border-minor border-shadow-minor">
+                            <BsGithub />
+                            <Span>Repositório</Span>
+                        </a>
+                    </ContentRow>
+
+                    <ContentRow>
+                        <FaReact />
                     </ContentRow>
                 </ProjectBox>
 

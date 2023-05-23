@@ -31,10 +31,18 @@ export const ProjectBox = styled.div`
     flex-direction: column;
     row-gap: 8px;
 
-    width: 270px;
+    width: calc(25% - 16px);
 
     p {
         flex-grow: 1;
+    }
+
+    @media (max-width: 960px)  {
+        width: calc(50% - 16px);
+    }
+
+    @media (max-width: 580px)  {
+        width: calc(100% - 16px);
     }
 `
 

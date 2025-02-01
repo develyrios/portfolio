@@ -8,7 +8,7 @@ export const Container = styled.section`
   background-size: contain;
 
   height: 90vh;
-  margin-top: 3rem;
+  margin-top: 2rem;
 
   > img {
     grid-column: 2 / 5;
@@ -25,25 +25,28 @@ export const Infos = styled.section`
   gap: 2rem;
 `;
 
-export const HeaderTitle = styled.h1`
+export const HeaderTitulo = styled.h1`
   width: fit-content;
 `;
 
-export const HeaderSubTitle = styled.h2`
+export const HeaderSubTitulo = styled.h2`
   font-weight: 600;
   font-size: 3rem;
   text-align: right;
+
+  font-family: var(--poppins);
 `;
 
-export const HeaderParagraph = styled.p`
+export const HeaderParagrafo = styled.p`
   font-weight: 500;
   font-size: 2rem;
   text-align: right;
+
+  font-family: var(--nunito);
 `;
 
-export const HeaderParagraphStrong = styled.strong`
+export const HeaderNegrito = styled.strong`
   font-weight: 700;
-  font-size: 2rem;
   color: var(--verde-neon);
 `;
 
@@ -52,6 +55,7 @@ export const Links = styled.div`
   column-gap: 3rem;
 
   a {
+    font-family: var(--poppins);
     font-size: 2rem;
     font-weight: 600;
 

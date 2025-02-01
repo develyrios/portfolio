@@ -1,9 +1,9 @@
 import {
   Container,
-  HeaderParagraph,
-  HeaderParagraphStrong,
-  HeaderSubTitle,
-  HeaderTitle,
+  HeaderParagrafo,
+  HeaderNegrito,
+  HeaderSubTitulo,
+  HeaderTitulo,
   Infos,
   Footer,
   Links,
@@ -22,24 +22,22 @@ export const Header = () => {
       <img src={fotoDePerfil} alt="Foto de Bev Feitosa" />
 
       <Infos>
-        <HeaderTitle>
+        <HeaderTitulo>
           <img src={logoGrande} alt="Bev Feitosa" />
-        </HeaderTitle>
+        </HeaderTitulo>
 
-        <HeaderSubTitle className="poppins">Dev Front-End</HeaderSubTitle>
-        <HeaderParagraph className="nunito">
+        <HeaderSubTitulo>Dev Front-End</HeaderSubTitulo>
+        <HeaderParagrafo>
           Lorem ipsum dolor sit{" "}
-          <HeaderParagraphStrong>
-            amet, consectetur adipiscing elit
-          </HeaderParagraphStrong>
-          . Suspendisse mattis id enim quis porta.
-        </HeaderParagraph>
+          <HeaderNegrito>amet, consectetur adipiscing elit</HeaderNegrito>.
+          Suspendisse mattis id enim quis porta.
+        </HeaderParagrafo>
 
         <Links>
-          <a href="#" className="poppins b16">
+          <a href="#" className="b16">
             <img src={curriculo} /> Currículo
           </a>
-          <a href="" className="poppins b16">
+          <a href="" className="b16">
             <img src={linkedin} /> Linkedin
           </a>
         </Links>
@@ -47,7 +45,7 @@ export const Header = () => {
 
       <Footer>
         <img src={mouse} />
-        <Span className="nunito">Role para baixo</Span>
+        <Span>Role para baixo</Span>
         <img src={setas} />
       </Footer>
     </Container>

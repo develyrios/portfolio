@@ -4,7 +4,7 @@ export default createGlobalStyle`
     :root {
         --montserrat: "Montserrat", serif;
         --poppins: "Poppins", serif;
-        -nunito: "Nunito", serif;
+        --nunito: "Nunito", serif;
         --preto: #131415;
         --off-black: #1F2022;
         --carbono: #374151;
@@ -25,6 +25,7 @@ export default createGlobalStyle`
     html{
     width: 100%;
     height: 100%;
+    font-size: 16px;
     }
 
     button {
@@ -33,26 +34,37 @@ export default createGlobalStyle`
 
     body {
         background-color: var(--off-black);
+        color: var(--branco);
         margin: 0 auto;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--branco);
+
+        transition: 200ms;
+    }
+
+    a:hover {
+        transform: scale(1.1);
+    }
+
+    a:active {
+        transform: scale(0.9);
     }
 
     .layout-grid {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-gap: 16px;
-        margin: 0 32px;
-    }
+        grid-auto-rows: auto;
+        column-gap: 1rem;
+        row-gap: 2rem;
+        margin: 0 2rem;
+        align-content: center;
+        justify-items: center;
 
-    /* @media (max-width: 1100px) {
-        body {
-            width: 90%;
-        }
-        
-        #root {
-            grid-template-columns: repeat(4, 1fr);
-            grid-gap: 8px;
-        }
-    } */
+        padding: 2rem 0;
+    }
 
     .montserrat {
         font-family: var(--montserrat);
@@ -67,14 +79,18 @@ export default createGlobalStyle`
     }
 
     .b4 {
-        border-radius: 4px;
+        border-radius: 0.25rem;
     }
 
     .b8 {
-        border-radius: 8px;
+        border-radius: 0.5rem;
     }
     
     .b16 {
-        border-radius: 16px;
+        border-radius: 1rem;
+    }
+
+    .b32 {
+        border-radius: 2rem;
     }
 `;

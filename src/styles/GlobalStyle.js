@@ -1,11 +1,18 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
     :root {
-        --ubuntu: 'Ubuntu', sans-serif;;
-        --branco: #FFFFFF;
-        --preto: #000000;
-        --principal: #d7f3fb;
+        --montserrat: "Montserrat", serif;
+        --poppins: "Poppins", serif;
+        -nunito: "Nunito", serif;
+        --preto: #131415;
+        --off-black: #1F2022;
+        --carbono: #374151;
+        --cinza: #60779C;
+        --branco: #F9FAFB;
+        --verde-neon: #7FFF00;
+        --azul-bebe: #93C5FD;
+        --azul: #3B82F6;
     }
 
     * {
@@ -82,4 +89,4 @@ export default createGlobalStyle`
     .border-shadow-major {
         box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
     }
-`
+`;

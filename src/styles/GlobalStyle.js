@@ -38,6 +38,16 @@ export default createGlobalStyle`
         margin: 0 auto;
     }
 
+    #root {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #root > section:nth-child(even) {
+        background-color: var(--preto);
+    }
+
     a {
         text-decoration: none;
         color: var(--branco);
@@ -60,22 +70,9 @@ export default createGlobalStyle`
         column-gap: 1rem;
         row-gap: 2rem;
         margin: 0 2rem;
+        padding: 2rem 0;
         align-content: center;
         justify-items: center;
-
-        padding: 2rem 0;
-    }
-
-    .montserrat {
-        font-family: var(--montserrat);
-    }
-
-    .poppins {
-        font-family: var(--poppins);
-    }
-
-    .nunito {
-        font-family: var(--nunito);
     }
 
     .b4 {

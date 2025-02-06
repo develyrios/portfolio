@@ -1,11 +1,18 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
     :root {
-        --ubuntu: 'Ubuntu', sans-serif;;
-        --branco: #FFFFFF;
-        --preto: #000000;
-        --principal: #d7f3fb;
+        --montserrat: "Montserrat", serif;
+        --poppins: "Poppins", serif;
+        --nunito: "Nunito", serif;
+        --preto: #131415;
+        --off-black: #1F2022;
+        --carbono: #374151;
+        --cinza: #60779C;
+        --branco: #F9FAFB;
+        --verde-neon: #7FFF00;
+        --azul-bebe: #93C5FD;
+        --azul: #3B82F6;
     }
 
     * {
@@ -18,68 +25,67 @@ export default createGlobalStyle`
     html{
     width: 100%;
     height: 100%;
+    font-size: 16px;
     }
 
     button {
     cursor: pointer;
     }
 
-    body, input, button, textarea {
-        font-family: var(--ubuntu);
-    }
-
     body {
-        background-color:hsla(166,100%,94%,1);
-        background-image:
-        radial-gradient(at 71% 34%, hsla(36,44%,90%,0.62) 0px, transparent 50%),
-        radial-gradient(at 100% 0%, hsla(299,44%,90%,0.53) 0px, transparent 50%),
-        radial-gradient(at 2% 97%, hsla(270,44%,90%,1) 0px, transparent 50%),
-        radial-gradient(at 40% 20%, hsla(206,44%,90%,1) 0px, transparent 50%),
-        radial-gradient(at 96% 100%, hsla(218,44%,90%,1) 0px, transparent 50%),
-        radial-gradient(at 0% 0%, hsla(175,44%,90%,0.52) 0px, transparent 50%);
-        background-size: cover;
-        background-attachment: fixed;
-
+        background-color: var(--off-black);
+        color: var(--branco);
         margin: 0 auto;
-        min-height: 100vh;
-        padding: 16px 0;
-        width: 1100px;
     }
 
     #root {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-gap: 16px;
-
-        > div {
-            background: #fff
-        }
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
     }
 
-    @media (max-width: 1100px) {
-        body {
-            width: 90%;
-        }
-        
-        #root {
-            grid-template-columns: repeat(4, 1fr);
-            grid-gap: 8px;
-        }
+    .background {
+        margin-left: 2rem;
+        margin-right: 2rem;
+
+        display: flex;
+        justify-content: center;
     }
 
-    .border-minor {
-        border-radius: 8px;
+    .background:nth-child(even) {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        background-color: var(--preto);
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--branco);
+
+        transition: 400ms;
+    }
+
+    a:hover {
+        transform: scale(1.1);
+    }
+
+    a:active {
+        transform: scale(0.9);
     }
     
-    .border-major {
-        border-radius: 16px;
+    .b4 {
+        border-radius: 0.25rem;
+    }
+
+    .b8 {
+        border-radius: 0.5rem;
     }
     
-    .border-shadow-minor {
-        box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+    .b16 {
+        border-radius: 1rem;
     }
-    
-    .border-shadow-major {
-        box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+
+    .b32 {
+        border-radius: 2rem;
     }
-`
+`;

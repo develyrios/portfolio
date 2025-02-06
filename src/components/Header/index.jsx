@@ -7,6 +7,7 @@ import {
   Infos,
   Footer,
   Links,
+  Background,
 } from "./style";
 import { Span } from "../../styles/Text";
 import fotoDePerfil from "../../assets/foto.svg";
@@ -14,40 +15,46 @@ import logoGrande from "../../assets/logo-grande.svg";
 import mouse from "../../assets/icone-mouse.svg";
 import setas from "../../assets/icone-setas-brancas.svg";
 import curriculo from "../../assets/icone-curriculo.svg";
-import linkedin from "../../assets/icone-linkedin.svg";
+import linkedin from "../../assets/icone-linkedin-verde.svg";
 
 export const Header = () => {
   return (
-    <Container className="layout-grid b32">
-      <img src={fotoDePerfil} alt="Foto de Bev Feitosa" />
+    <Background className="b32 background">
+      <Container>
+        <img src={fotoDePerfil} alt="Foto de Bev Feitosa" />
 
-      <Infos>
-        <HeaderTitulo>
-          <img src={logoGrande} alt="Bev Feitosa" />
-        </HeaderTitulo>
+        <Infos>
+          <HeaderTitulo>
+            <img src={logoGrande} alt="Bev Feitosa" />
+          </HeaderTitulo>
 
-        <HeaderSubTitulo>Dev Front-End</HeaderSubTitulo>
-        <HeaderParagrafo>
-          Lorem ipsum dolor sit{" "}
-          <HeaderNegrito>amet, consectetur adipiscing elit</HeaderNegrito>.
-          Suspendisse mattis id enim quis porta.
-        </HeaderParagrafo>
+          <HeaderSubTitulo>Dev Front-End</HeaderSubTitulo>
+          <HeaderParagrafo>
+            Quero construir um futuro que{" "}
+            <HeaderNegrito>minha existência</HeaderNegrito> seja{" "}
+            <HeaderNegrito>inevitável</HeaderNegrito>. Vem comigo?
+          </HeaderParagrafo>
 
-        <Links>
-          <a href="#" className="b16">
-            <img src={curriculo} /> Currículo
-          </a>
-          <a href="" className="b16">
-            <img src={linkedin} /> Linkedin
-          </a>
-        </Links>
-      </Infos>
+          <Links>
+            <a href="#" className="b16">
+              <img src={curriculo} /> Currículo
+            </a>
+            <a
+              href="https://www.linkedin.com/in/bevfeitosa"
+              className="b16"
+              target="blank"
+            >
+              <img src={linkedin} /> Linkedin
+            </a>
+          </Links>
+        </Infos>
 
-      <Footer>
-        <img src={mouse} />
-        <Span>Role para baixo</Span>
-        <img src={setas} />
-      </Footer>
-    </Container>
+        <Footer>
+          <img src={mouse} />
+          <Span>Role para baixo</Span>
+          <img src={setas} />
+        </Footer>
+      </Container>
+    </Background>
   );
 };

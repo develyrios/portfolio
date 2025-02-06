@@ -1,23 +1,35 @@
 import styled from "styled-components";
 import hexagonosGrande from "../../assets/hexagonos-grande-verde.svg";
 
-export const Container = styled.section`
+export const Background = styled.section`
   background-image: url(${hexagonosGrande});
   background-position: center right;
   background-repeat: no-repeat;
   background-size: contain;
 
-  height: 90vh;
   margin-top: 2rem;
+  height: 88vh;
+`;
+
+export const Container = styled.div`
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-auto-rows: auto;
+  column-gap: 1rem;
+  row-gap: 2rem;
+  align-content: center;
+  justify-items: center;
+
+  width: 70vw;
 
   > img {
-    grid-column: 2 / 5;
+    grid-column: 1 / 2;
     width: 100%;
   }
 `;
 
 export const Infos = styled.section`
-  grid-column: 6 / 11;
+  grid-column: 2 / 3;
   display: flex;
   flex-wrap: wrap;
   justify-content: end;
@@ -64,14 +76,24 @@ export const Links = styled.div`
 
     background-color: var(--carbono);
     padding: 1rem 2rem;
+
+    :hover {
+      background-color: var(--cinza);
+    }
   }
 `;
 
 export const Footer = styled.footer`
-  display: flex;
   grid-row: 2 / 2;
-  grid-column: 6 / 8;
-  gap: 1rem;
+  grid-column: 1 / -1;
+
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 
   margin-top: 2rem;
+
+  > img {
+    height: 1.5rem;
+  }
 `;

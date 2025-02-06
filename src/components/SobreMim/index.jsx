@@ -1,86 +1,65 @@
-import { Paragrafo, Span, Titulo1, Titulo2 } from "../../styles/Text";
-import { Container, Ferramentas, Stacks, Resumo, Item } from "./style";
-import ts from "../../assets/icone-typescript.svg";
-import rct from "../../assets/icone-react.svg";
-import js from "../../assets/icone-javascript.svg";
-import css from "../../assets/icone-css.svg";
-import html from "../../assets/icone-html.svg";
+import { Paragrafo, Titulo1, Titulo2 } from "../../styles/Text";
+import { Container, Ferramentas, Stacks, Resumo, Conteudo } from "./style";
+import ts from "../../assets/icone-typescript-azul.svg";
+import rct from "../../assets/icone-react-azul.svg";
+import js from "../../assets/icone-javascript-azul.svg";
+import css from "../../assets/icone-css-azul.svg";
+import html from "../../assets/icone-html-azul.svg";
+import { Item } from "../Item";
 
 export const SobreMim = () => {
   return (
-    <Container className="layout-grid b32">
+    <Container className="b32 background">
       <Titulo1>Sobre mim</Titulo1>
 
-      <Resumo>
-        <Titulo2>Resumo</Titulo2>
-        <Paragrafo>
-          Tenho formação em Engenharia de Materiais e meu foco atual é colocação
-          no mercado de Desenvolvimento Front-end como trainee ou junior tanto
-          remoto como presencial.
-        </Paragrafo>
+      <Conteudo>
+        <Resumo>
+          <Titulo2>Resumo</Titulo2>
+          <Paragrafo>
+            Sou Dev Front-End com uma paixão por comunicação e criação de
+            conteúdo. A mentalidade que levo pra minha carreira e pros meus
+            projetos é sempre buscar criar soluções de forma criativa e
+            inovadora!
+          </Paragrafo>
 
-        <Paragrafo>
-          Gosto de resolver problemas, trabalhar em equipe, aprender coisas
-          novas e aprimorar o que já sei. Faço uso de ferramentas como Git,
-          Github, Figma e Trello, além das linguagens descritas na seção
-          "Tecnologias". Também gosto de criar e desenvolver ideias, fazendo
-          elas saírem do papel e aprimorá-las sempre que preciso.
-        </Paragrafo>
+          <Paragrafo>
+            Inteligência emocional é um dos meus pilares e a partir dela busco
+            melhorar meu autoconhecimento. Gosto de me comunicar com pessoas,
+            além de compartilhar e apresentar meus processos produtivos e
+            resultados.
+          </Paragrafo>
 
-        <Paragrafo>
-          Estou há cerca de um ano estudando desenvolvimento front-end. Durante
-          minha jornada já fiz diversos cursos, aplicando sempre que possível os
-          conhecimentos adquiridos em projetos pessoais e no meu portfólio.
-        </Paragrafo>
-      </Resumo>
+          <Paragrafo>
+            Estou em busca de oportunidades como Junior ou Trainee na área de
+            desenvolvimento front-end, em que eu possa exercer todas as minhas
+            habilidades e competências além de poder crescer e evoluir como
+            profissional.
+          </Paragrafo>
 
-      <Stacks>
-        <Titulo2>Stacks</Titulo2>
-        <Item className="b8">
-          <img src={ts} alt="" />
-          <Span>TypeScript</Span>
-        </Item>
-        <Item className="b8">
-          <img src={rct} alt="" />
-          <Span>React</Span>
-        </Item>
-        <Item className="b8">
-          <img src={js} alt="" />
-          <Span>JavaScript</Span>
-        </Item>
-        <Item className="b8">
-          <img src={css} alt="" />
-          <Span>CSS</Span>
-        </Item>
-        <Item className="b8">
-          <img src={html} alt="" />
-          <Span>HTML</Span>
-        </Item>
-      </Stacks>
+          <Paragrafo>
+            Vamos conversar sobre como posso agregar valor à sua equipe ou
+            projeto?
+          </Paragrafo>
+        </Resumo>
 
-      <Ferramentas>
-        <Titulo2>Ferramentas</Titulo2>
-        <Item className="b8">
-          <img src={ts} alt="" />
-          <Span>TypeScript</Span>
-        </Item>
-        <Item className="b8">
-          <img src={rct} alt="" />
-          <Span>React</Span>
-        </Item>
-        <Item className="b8">
-          <img src={js} alt="" />
-          <Span>JavaScript</Span>
-        </Item>
-        <Item className="b8">
-          <img src={css} alt="" />
-          <Span>CSS</Span>
-        </Item>
-        <Item className="b8">
-          <img src={html} alt="" />
-          <Span>HTML</Span>
-        </Item>
-      </Ferramentas>
+        <Stacks>
+          <Titulo2>Stacks</Titulo2>
+          <Item imgSrc={ts} nome="TypeScript" />
+          <Item imgSrc={rct} nome="React" />
+          <Item imgSrc={js} nome="JavaScript" />
+          <Item imgSrc={html} nome="CSS" />
+          <Item imgSrc={css} nome="HTML" />
+        </Stacks>
+
+        <Ferramentas>
+          <Titulo2>Ferramentas</Titulo2>
+          <Item imgSrc={rct} nome="React" />
+          <Item imgSrc={rct} nome="React" />
+          <Item imgSrc={rct} nome="React" />
+          <Item imgSrc={rct} nome="React" />
+          <Item imgSrc={rct} nome="React" />
+        </Ferramentas>
+      </Conteudo>
     </Container>
   );
 };

@@ -7,9 +7,16 @@ export const Container = styled.section`
   background-repeat: no-repeat;
   background-size: contain;
 
-  grid-row: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 
-  position: relative;
+export const Conteudo = styled.div`
+  display: flex;
+  justify-content: center;
+
+  gap: 2.5rem;
 
   > section {
     display: flex;
@@ -28,29 +35,9 @@ export const Container = styled.section`
 `;
 
 export const Resumo = styled.section`
-  grid-row: 2 / 3;
-  grid-column: 3 / 7;
+  width: 70ch;
 `;
 
-export const Stacks = styled.section`
-  grid-row: 2 / 3;
-  grid-column: 7 / 9;
-`;
+export const Stacks = styled.section``;
 
-export const Ferramentas = styled.section`
-  grid-row: 2 / 3;
-  grid-column: 9 / 11;
-`;
-
-export const Item = styled.div`
-  display: flex;
-  gap: 0.75rem;
-
-  padding: 0.5rem 1rem;
-
-  background-color: var(--carbono);
-
-  img {
-    width: 1.5rem;
-  }
-`;
+export const Ferramentas = styled.section``;

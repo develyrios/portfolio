@@ -44,7 +44,17 @@ export default createGlobalStyle`
         gap: 2rem;
     }
 
-    #root > section:nth-child(even) {
+    .background {
+        margin-left: 2rem;
+        margin-right: 2rem;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .background:nth-child(even) {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
         background-color: var(--preto);
     }
 
@@ -52,7 +62,7 @@ export default createGlobalStyle`
         text-decoration: none;
         color: var(--branco);
 
-        transition: 200ms;
+        transition: 400ms;
     }
 
     a:hover {
@@ -62,19 +72,7 @@ export default createGlobalStyle`
     a:active {
         transform: scale(0.9);
     }
-
-    .layout-grid {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-auto-rows: auto;
-        column-gap: 1rem;
-        row-gap: 2rem;
-        margin: 0 2rem;
-        padding: 2rem 0;
-        align-content: center;
-        justify-items: center;
-    }
-
+    
     .b4 {
         border-radius: 0.25rem;
     }

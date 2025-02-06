@@ -8,6 +8,8 @@ export const Titulo1 = styled.h1`
   text-transform: uppercase;
 
   grid-column: 1 / -1;
+
+  margin-bottom: 1rem;
 `;
 
 export const Titulo2 = styled.h2`
@@ -26,6 +28,6 @@ export const Paragrafo = styled.p`
 
 export const Span = styled.span`
   font-family: var(--nunito);
-  font-size: 1.5rem;
+  font-size: 1.125rem;
   font-weight: 500;
 `;

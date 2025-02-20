@@ -21,7 +21,8 @@ export const Conteudo = styled.div`
 
   position: relative;
 
-  > section {
+  > section,
+  ul {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -39,24 +40,30 @@ export const Conteudo = styled.div`
   }
 `;
 
-export const Post = styled.article`
+export const Post = styled.li`
   display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto 1fr;
   align-items: end;
-  gap: 1rem;
+  column-gap: 1rem;
+  row-gap: 0.5rem;
 
   > img {
     grid-column: 1 / 2;
-    grid-row: 1 / 3;
+    grid-row: 1 / 4;
 
     width: 200px;
     height: 200px;
   }
 
-  p {
+  h3 {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+  }
+
+  p {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
 
     width: 25ch;
   }
@@ -65,7 +72,7 @@ export const Post = styled.article`
     font-family: var(--nunito);
 
     grid-column: 2 / 3;
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
 
     width: fit-content;
 

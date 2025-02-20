@@ -21,17 +21,25 @@ export const Curso = ({
         </Texto>
 
         <Mockup>
-          <img src={imgDesktop} alt="" />
-          <img src={imgMobile} alt="" />
+          <img src={imgDesktop} alt="Mockup desktop" />
+          <img src={imgMobile} alt="Mockup mobile" />
         </Mockup>
       </Conteudo>
 
       <Links>
         <a href={link}>
-          <Item imgSrc={iconeLink} nome="Link do projeto" />
+          <Item
+            imgSrc={iconeLink}
+            imgAlt="(Abre uma nova guia)"
+            nome="Link do projeto"
+          />
         </a>
         <a href={repositorio}>
-          <Item imgSrc={github} nome="Repositório do projeto" />
+          <Item
+            imgSrc={github}
+            imgAlt="(Abre uma nova guia)"
+            nome="Repositório do projeto"
+          />
         </a>
       </Links>
     </Container>

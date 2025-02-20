@@ -1,8 +1,9 @@
 import styled from "styled-components";
-import hexagonosPequeno from "../../assets/hexagonos-pequeno-azul.svg";
+import hexagonosPequenos2x from "../../assets/hexagonos-pequenos-azul-2x.svg";
+import hexagonosPequenos1x from "../../assets/hexagonos-pequenos-azul-1x.svg";
 
 export const Container = styled.section`
-  background-image: url(${hexagonosPequeno});
+  background-image: url(${hexagonosPequenos2x});
   background-position: center left;
   background-repeat: no-repeat;
   background-size: contain;
@@ -18,7 +19,8 @@ export const Conteudo = styled.div`
 
   gap: 2.5rem;
 
-  > section {
+  > section,
+  ul {
     display: flex;
     flex-direction: column;
     gap: 1rem;

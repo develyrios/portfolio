@@ -10,20 +10,32 @@ export const Contato = () => {
       <Titulo1>Contato</Titulo1>
 
       <Redes>
-        <a href="#">
-          <Item imgSrc={linkedin} nome="E-mail" />
+        <a href="mailto:bevfeitosa@gmail.com">
+          <Item
+            imgSrc={linkedin}
+            imgAlt="(Abre uma nova guia para enviar um e-mail)"
+            nome="E-mail"
+          />
         </a>
 
         <a href="https://www.linkedin.com/in/bevfeitosa/">
-          <Item imgSrc={linkedin} nome="LinkedIn" />
+          <Item
+            imgSrc={linkedin}
+            imgAlt="(Abre uma nova guia)"
+            nome="LinkedIn"
+          />
         </a>
 
         <a href="https://github.com/develyrios">
-          <Item imgSrc={github} nome="Github" />
+          <Item imgSrc={github} imgAlt="(Abre uma nova guia)" nome="Github" />
         </a>
 
         <a href="https://instagram.com/develyrios#">
-          <Item imgSrc={github} nome="Instagram" />
+          <Item
+            imgSrc={github}
+            imgAlt="(Abre uma nova guia)"
+            nome="Instagram"
+          />
         </a>
       </Redes>
 

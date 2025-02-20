@@ -14,7 +14,7 @@ export const Container = styled.section`
   }
 `;
 
-export const Redes = styled.div`
+export const Redes = styled.ul`
   display: flex;
   gap: 1rem;
 `;

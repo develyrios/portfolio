@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.article`
+export const Container = styled.li`
   padding: 2rem;
   width: fit-content;
   display: flex;
@@ -11,7 +11,7 @@ export const Container = styled.article`
   border-left: 0.5rem solid transparent;
   transition: 400ms;
 
-  :nth-child(even) {
+  :nth-child(odd) {
     background-color: var(--off-black);
   }
 
@@ -45,7 +45,7 @@ export const Texto = styled.div`
   }
 `;
 
-export const Links = styled.div`
+export const Links = styled.ul`
   display: flex;
   gap: 1rem;
 `;

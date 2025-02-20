@@ -44,20 +44,24 @@ export const SobreMim = () => {
 
         <Stacks>
           <Titulo2>Stacks</Titulo2>
-          <Item imgSrc={ts} nome="TypeScript" />
-          <Item imgSrc={rct} nome="React" />
-          <Item imgSrc={js} nome="JavaScript" />
-          <Item imgSrc={html} nome="CSS" />
-          <Item imgSrc={css} nome="HTML" />
+          <ul>
+            <Item imgSrc={ts} nome="TypeScript" />
+            <Item imgSrc={rct} nome="React" />
+            <Item imgSrc={js} nome="JavaScript" />
+            <Item imgSrc={html} nome="CSS" />
+            <Item imgSrc={css} nome="HTML" />
+          </ul>
         </Stacks>
 
         <Ferramentas>
           <Titulo2>Ferramentas</Titulo2>
-          <Item imgSrc={rct} nome="React" />
-          <Item imgSrc={rct} nome="React" />
-          <Item imgSrc={rct} nome="React" />
-          <Item imgSrc={rct} nome="React" />
-          <Item imgSrc={rct} nome="React" />
+          <ul>
+            <Item imgSrc={rct} nome="React" />
+            <Item imgSrc={rct} nome="React" />
+            <Item imgSrc={rct} nome="React" />
+            <Item imgSrc={rct} nome="React" />
+            <Item imgSrc={rct} nome="React" />
+          </ul>
         </Ferramentas>
       </Conteudo>
     </Container>

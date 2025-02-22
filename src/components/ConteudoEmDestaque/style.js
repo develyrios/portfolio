@@ -31,14 +31,31 @@ export const Conteudo = styled.div`
   ::before {
     content: " ";
     display: inline-block;
-    background-color: #353739;
+    background-color: var(--detalhe);
     height: 90%;
     width: 0.125rem;
     position: absolute;
     left: 50%;
     top: 10%;
   }
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    gap: 2rem;
+
+    > section,
+    ul {
+      gap: 1rem;
+    }
+
+    ::before {
+      display: none;
+    }
+  }
 `;
+
+export const Linkedin = styled.section``;
+export const Instagram = styled.section``;
 
 export const Post = styled.li`
   display: grid;
@@ -87,5 +104,25 @@ export const Post = styled.li`
   a > img {
     height: 0.75rem;
     margin-left: 0.25rem;
+  }
+
+  @media (max-width: 1000px) {
+    position: relative;
+
+    :nth-child(odd)::after {
+      content: " ";
+      display: inline-block;
+      background-color: var(--detalhe);
+      height: 0.1rem;
+      width: 100%;
+      position: absolute;
+      bottom: -0.6rem;
+    }
+  }
+
+  @media (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
   }
 `;

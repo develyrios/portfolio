@@ -13,19 +13,25 @@ export default createGlobalStyle`
         --verde-neon: #7FFF00;
         --azul-bebe: #93C5FD;
         --azul: #3B82F6;
+        --detalhe: #353739;
     }
 
     * {
-    margin:0;
-    padding: 0;
-    outline:0;
-    box-sizing: border-box;
+        margin:0;
+        padding: 0;
+        outline:0;
+        box-sizing: border-box;
+    }
+
+    li {
+        text-decoration: none;
+        list-style: none;
     }
 
     html{
-    width: 100%;
-    height: 100%;
-    font-size: 16px;
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
     }
 
     button {
@@ -50,12 +56,18 @@ export default createGlobalStyle`
 
         display: flex;
         justify-content: center;
+
+        @media (max-width: 1170px) {
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
     }
 
     .background:nth-child(even) {
         padding-top: 2rem;
         padding-bottom: 2rem;
         background-color: var(--preto);
+        border-radius: 2rem;
     }
 
     a {

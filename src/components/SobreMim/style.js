@@ -6,11 +6,35 @@ export const Container = styled.section`
   background-image: url(${hexagonosPequenos2x});
   background-position: center left;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: auto;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 1366px) {
+    background-image: url(${hexagonosPequenos1x});
+  }
+
+  @media (max-width: 800px) {
+    background-size: contain;
+
+    > div,
+    h1,
+    p {
+      width: calc(100vw - 10rem);
+    }
+  }
+
+  @media (max-width: 495px) {
+    background-image: none;
+
+    > div,
+    h1,
+    p {
+      width: calc(100vw - 6rem);
+    }
+  }
 `;
 
 export const Conteudo = styled.div`
@@ -19,14 +43,14 @@ export const Conteudo = styled.div`
 
   gap: 2.5rem;
 
-  > section,
+  section,
   ul {
     display: flex;
     flex-direction: column;
     gap: 1rem;
   }
 
-  > section > h2::before {
+  h2::before {
     content: " ";
     background-color: var(--azul);
     display: inline-block;
@@ -34,10 +58,34 @@ export const Conteudo = styled.div`
     width: 0.25rem;
     margin-right: 0.25rem;
   }
+
+  @media (max-width: 1250px) {
+    flex-direction: column;
+  }
 `;
 
 export const Resumo = styled.section`
   width: 70ch;
+`;
+
+export const Tecnologias = styled.div`
+  display: flex;
+  justify-content: space-between;
+  gap: 2.5rem;
+
+  @media (max-width: 570px) {
+    h2 {
+      font-size: 1.25rem;
+
+      ::before {
+        height: 1rem;
+      }
+    }
+  }
+
+  @media (max-width: 430px) {
+    flex-direction: column;
+  }
 `;
 
 export const Stacks = styled.section``;

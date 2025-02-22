@@ -1,5 +1,5 @@
 import { Paragrafo, Titulo1, Titulo2, Titulo3 } from "../../styles/Text";
-import { Container, Conteudo, Post } from "./style";
+import { Container, Conteudo, Linkedin, Instagram, Post } from "./style";
 import setas from "../../assets/icone-setas-verde.svg";
 
 export const ConteudoEmDestaque = () => {
@@ -8,7 +8,7 @@ export const ConteudoEmDestaque = () => {
       <Titulo1>Conteúdo em destaque</Titulo1>
 
       <Conteudo>
-        <section>
+        <Linkedin>
           <Titulo2>Linkedin</Titulo2>
           <ul>
             <Post>
@@ -39,9 +39,9 @@ export const ConteudoEmDestaque = () => {
               </a>
             </Post>
           </ul>
-        </section>
+        </Linkedin>
 
-        <section>
+        <Instagram>
           <Titulo2>Instagram</Titulo2>
           <ul>
             <Post>
@@ -72,7 +72,7 @@ export const ConteudoEmDestaque = () => {
               </a>
             </Post>
           </ul>
-        </section>
+        </Instagram>
       </Conteudo>
     </Container>
   );

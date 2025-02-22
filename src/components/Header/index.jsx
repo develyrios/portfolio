@@ -12,6 +12,7 @@ import {
 import { Span } from "../../styles/Text";
 import fotoDePerfil from "../../assets/foto.svg";
 import logoGrande from "../../assets/logo-grande.svg";
+import logoPequena from "../../assets/logo-pequena.svg";
 import mouse from "../../assets/icone-mouse.svg";
 import setas from "../../assets/icone-setas-brancas.svg";
 import curriculo from "../../assets/icone-curriculo.svg";
@@ -25,29 +26,35 @@ export const Header = () => {
 
         <Infos>
           <HeaderTitulo>
-            <img src={logoGrande} alt="Bev Feitosa" />
+            <img src={logoGrande} className="logo-grande" alt="Bev Feitosa" />
+            <img src={logoPequena} className="logo-pequena" alt="Bev Feitosa" />
           </HeaderTitulo>
 
           <HeaderSubTitulo>Dev Front-End</HeaderSubTitulo>
-          <HeaderParagrafo>
-            Quero construir um futuro que{" "}
-            <HeaderNegrito>minha existência</HeaderNegrito> seja{" "}
-            <HeaderNegrito>inevitável</HeaderNegrito>. Vem comigo?
-          </HeaderParagrafo>
+        </Infos>
 
-          <Links>
-            <a href="#" className="b16">
-              <img src={curriculo} /> Currículo
+        <HeaderParagrafo>
+          Quero construir um futuro que{" "}
+          <HeaderNegrito>minha existência</HeaderNegrito> seja{" "}
+          <HeaderNegrito>inevitável</HeaderNegrito>. Vem comigo?
+        </HeaderParagrafo>
+
+        <Links>
+          <li>
+            <a href="#" className="b16" target="blank">
+              <img src={curriculo} alt="(Abre uma nova guia)" /> Currículo
             </a>
+          </li>
+          <li>
             <a
               href="https://www.linkedin.com/in/bevfeitosa"
               className="b16"
               target="blank"
             >
-              <img src={linkedin} /> Linkedin
+              <img src={linkedin} alt="(Abre uma nova guia)" /> Linkedin
             </a>
-          </Links>
-        </Infos>
+          </li>
+        </Links>
 
         <Footer>
           <img src={mouse} />

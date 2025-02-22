@@ -3,7 +3,7 @@ import { SobreMim } from "./components/SobreMim";
 import { Projetos } from "./components/Projetos";
 import { Cursos } from "./components/Cursos";
 import { ConteudoEmDestaque } from "./components/ConteudoEmDestaque";
-import { Contato } from "./components/Contato";
+import { Redes } from "./components/Contato";
 import GlobalStyle from "./styles/GlobalStyle";
 
 export const App = () => {
@@ -15,7 +15,7 @@ export const App = () => {
       <Projetos />
       <Cursos />
       <ConteudoEmDestaque />
-      <Contato />
+      <Redes />
     </>
   );
 };

@@ -28,17 +28,13 @@ export const Curso = ({
 
       <Links>
         <a href={link}>
-          <Item
-            imgSrc={iconeLink}
-            imgAlt="(Abre uma nova guia)"
-            nome="Link do projeto"
-          />
+          <Item imgSrc={iconeLink} imgAlt="(Abre uma nova guia)" nome="Link" />
         </a>
         <a href={repositorio}>
           <Item
             imgSrc={github}
             imgAlt="(Abre uma nova guia)"
-            nome="Repositório do projeto"
+            nome="Repositório"
           />
         </a>
       </Links>

@@ -1,23 +1,15 @@
-import { Span, Titulo1 } from "../../styles/Text";
-import { Container, Redes } from "./style";
+import { Paragrafo, Span, Titulo1, Titulo3 } from "../../styles/Text";
+import { Container, Links } from "./style";
 import { Item } from "../Item";
 import linkedin from "../../assets/icone-linkedin-azul.svg";
 import github from "../../assets/icone-github-azul.svg";
 
-export const Contato = () => {
+export const Redes = () => {
   return (
     <Container>
-      <Titulo1>Contato</Titulo1>
+      <Titulo1>Redes</Titulo1>
 
-      <Redes>
-        <a href="mailto:bevfeitosa@gmail.com">
-          <Item
-            imgSrc={linkedin}
-            imgAlt="(Abre uma nova guia para enviar um e-mail)"
-            nome="E-mail"
-          />
-        </a>
-
+      <Links>
         <a href="https://www.linkedin.com/in/bevfeitosa/">
           <Item
             imgSrc={linkedin}
@@ -37,7 +29,14 @@ export const Contato = () => {
             nome="Instagram"
           />
         </a>
-      </Redes>
+      </Links>
+
+      <Titulo3>
+        Me mande um e-mail:{" "}
+        <a href="mailto:bevfeitosa@gmail.com">
+          <strong>bevfeitosa@gmail.com</strong>
+        </a>
+      </Titulo3>
 
       <Span>Desenhado e desenvolvido por Bev Feitosa - 2025</Span>
     </Container>

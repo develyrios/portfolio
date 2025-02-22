@@ -19,6 +19,13 @@ export const Titulo2 = styled.h2`
   text-align: left;
 `;
 
+export const Titulo3 = styled.h3`
+  font-family: var(--poppins);
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: left;
+`;
+
 export const Paragrafo = styled.p`
   font-family: var(--nunito);
   font-weight: 500;

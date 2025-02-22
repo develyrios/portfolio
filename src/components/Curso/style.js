@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
-export const Container = styled.article`
+export const Container = styled.li`
   padding: 2rem;
-  width: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,12 +10,16 @@ export const Container = styled.article`
   border-left: 0.5rem solid transparent;
   transition: 400ms;
 
-  :nth-child(even) {
+  :nth-child(odd) {
     background-color: var(--off-black);
   }
 
   :hover {
     border-left: 0.5rem solid var(--azul);
+  }
+
+  @media (max-width: 1000px) {
+    width: calc(100vw - 6rem);
   }
 `;
 
@@ -24,11 +27,25 @@ export const Conteudo = styled.div`
   display: flex;
   width: 50rem;
   gap: 2rem;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+  }
 `;
 
 export const Mockup = styled.div`
   display: flex;
+  justify-content: center;
   gap: 0.5rem;
+
+  @media (max-width: 500px) {
+    img {
+      height: 25vw;
+    }
+  }
 `;
 
 export const Texto = styled.div`
@@ -45,7 +62,9 @@ export const Texto = styled.div`
   }
 `;
 
-export const Links = styled.div`
+export const Links = styled.ul`
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
 `;

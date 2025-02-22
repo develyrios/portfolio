@@ -8,41 +8,43 @@ export const Projetos = () => {
   return (
     <Container className="background">
       <Titulo1>Projetos</Titulo1>
-      <Projeto
-        imgDesktop={ciaaDesktop}
-        imgMobile={ciaaMobile}
-        nome="CIAA"
-        descricao="Site feito pra uma comunidade do twitter. Nele foram usados conhecimentos de Desing Thinking, Git Flow, Conventional Commits e SCRUM."
-        link="https://ciaa.vercel.app/"
-        repositorio="https://github.com/develyrios/ciaa"
-      />
+      <ul>
+        <Projeto
+          imgDesktop={ciaaDesktop}
+          imgMobile={ciaaMobile}
+          nome="CIAA"
+          descricao="Site feito pra uma comunidade do twitter. Nele foram usados conhecimentos de Desing Thinking, Git Flow, Conventional Commits e SCRUM."
+          link="https://ciaa.vercel.app/"
+          repositorio="https://github.com/develyrios/ciaa"
+        />
 
-      <Projeto
-        imgDesktop={ciaaDesktop}
-        imgMobile={ciaaMobile}
-        nome="CIAA"
-        descricao="Site feito pra uma comunidade do twitter. Nele foram usados conhecimentos de Desing Thinking, Git Flow, Conventional Commits e SCRUM."
-        link="https://ciaa.vercel.app/"
-        repositorio="https://github.com/develyrios/ciaa"
-      />
+        <Projeto
+          imgDesktop={ciaaDesktop}
+          imgMobile={ciaaMobile}
+          nome="CIAA"
+          descricao="Site feito pra uma comunidade do twitter. Nele foram usados conhecimentos de Desing Thinking, Git Flow, Conventional Commits e SCRUM."
+          link="https://ciaa.vercel.app/"
+          repositorio="https://github.com/develyrios/ciaa"
+        />
 
-      <Projeto
-        imgDesktop={ciaaDesktop}
-        imgMobile={ciaaMobile}
-        nome="CIAA"
-        descricao="Site feito pra uma comunidade do twitter. Nele foram usados conhecimentos de Desing Thinking, Git Flow, Conventional Commits e SCRUM."
-        link="https://ciaa.vercel.app/"
-        repositorio="https://github.com/develyrios/ciaa"
-      />
+        <Projeto
+          imgDesktop={ciaaDesktop}
+          imgMobile={ciaaMobile}
+          nome="CIAA"
+          descricao="Site feito pra uma comunidade do twitter. Nele foram usados conhecimentos de Desing Thinking, Git Flow, Conventional Commits e SCRUM."
+          link="https://ciaa.vercel.app/"
+          repositorio="https://github.com/develyrios/ciaa"
+        />
 
-      <Projeto
-        imgDesktop={ciaaDesktop}
-        imgMobile={ciaaMobile}
-        nome="CIAA"
-        descricao="Site feito pra uma comunidade do twitter. Nele foram usados conhecimentos de Desing Thinking, Git Flow, Conventional Commits e SCRUM."
-        link="https://ciaa.vercel.app/"
-        repositorio="https://github.com/develyrios/ciaa"
-      />
+        <Projeto
+          imgDesktop={ciaaDesktop}
+          imgMobile={ciaaMobile}
+          nome="CIAA"
+          descricao="Site feito pra uma comunidade do twitter. Nele foram usados conhecimentos de Desing Thinking, Git Flow, Conventional Commits e SCRUM."
+          link="https://ciaa.vercel.app/"
+          repositorio="https://github.com/develyrios/ciaa"
+        />
+      </ul>
     </Container>
   );
 };

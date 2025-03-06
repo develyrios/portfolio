@@ -61,6 +61,11 @@ export default createGlobalStyle`
             margin-left: 1rem;
             margin-right: 1rem;
         }
+
+        @media (max-width: 500px) {
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+        }
     }
 
     .background:nth-child(even) {

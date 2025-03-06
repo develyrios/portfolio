@@ -13,6 +13,12 @@ export const Container = styled.section`
     width: 0.25rem;
     margin-right: 0.25rem;
   }
+
+  @media (max-width: 500px) {
+    h2::before {
+      height: 1.25rem;
+    }
+  }
 `;
 
 export const Conteudo = styled.div`

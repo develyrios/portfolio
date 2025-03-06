@@ -26,13 +26,13 @@ export const Container = styled.section`
     }
   }
 
-  @media (max-width: 495px) {
+  @media (max-width: 500px) {
     background-image: none;
 
     > div,
     h1,
     p {
-      width: calc(100vw - 6rem);
+      width: calc(100vw - 4rem);
     }
   }
 `;
@@ -65,7 +65,13 @@ export const Conteudo = styled.div`
 `;
 
 export const Resumo = styled.section`
-  width: 70ch;
+  max-width: 70ch;
+
+  @media (max-width: 500px) {
+    h2::before {
+      height: 1.25rem;
+    }
+  }
 `;
 
 export const Tecnologias = styled.div`

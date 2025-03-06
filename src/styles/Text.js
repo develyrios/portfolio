@@ -10,6 +10,18 @@ export const Titulo1 = styled.h1`
   grid-column: 1 / -1;
 
   margin-bottom: 1rem;
+
+  @media (max-width: 725px) {
+    font-size: 3rem;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 2.5rem;
+  }
+
+  @media (max-width: 380px) {
+    font-size: 2rem;
+  }
 `;
 
 export const Titulo2 = styled.h2`
@@ -17,6 +29,14 @@ export const Titulo2 = styled.h2`
   font-weight: 500;
   font-size: 2rem;
   text-align: left;
+
+  @media (max-width: 725px) {
+    font-size: 1.75rem;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 1.5rem;
+  }
 `;
 
 export const Titulo3 = styled.h3`
@@ -24,6 +44,14 @@ export const Titulo3 = styled.h3`
   font-weight: 400;
   font-size: 1.5rem;
   text-align: left;
+
+  @media (max-width: 725px) {
+    font-size: 1.35rem;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 1.15rem;
+  }
 `;
 
 export const Paragrafo = styled.p`
@@ -37,4 +65,12 @@ export const Span = styled.span`
   font-family: var(--nunito);
   font-size: 1.125rem;
   font-weight: 500;
+
+  @media (max-width: 725px) {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 0.9rem;
+  }
 `;

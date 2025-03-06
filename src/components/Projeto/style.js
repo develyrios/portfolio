@@ -21,6 +21,12 @@ export const Container = styled.li`
   @media (max-width: 1000px) {
     width: calc(100vw - 6rem);
   }
+
+  @media (max-width: 500px) {
+    width: calc(100vw - 4rem);
+
+    padding: 1rem;
+  }
 `;
 
 export const Conteudo = styled.div`
@@ -59,6 +65,12 @@ export const Texto = styled.div`
     height: 1.5rem;
     width: 0.25rem;
     margin-right: 0.25rem;
+  }
+
+  @media (max-width: 500px) {
+    h2::before {
+      height: 1.25rem;
+    }
   }
 `;
 

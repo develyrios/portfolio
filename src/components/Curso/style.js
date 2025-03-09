@@ -31,12 +31,12 @@ export const Container = styled.li`
 
 export const Conteudo = styled.div`
   display: flex;
+  align-items: center;
   width: 50rem;
   gap: 2rem;
 
   @media (max-width: 1000px) {
     flex-direction: column;
-    align-items: center;
 
     width: 100%;
   }
@@ -46,10 +46,11 @@ export const Mockup = styled.div`
   display: flex;
   justify-content: center;
   gap: 0.5rem;
+  max-height: 10rem;
 
   @media (max-width: 500px) {
     img {
-      height: 25vw;
+      max-height: 25vw;
     }
   }
 `;
@@ -57,6 +58,7 @@ export const Mockup = styled.div`
 export const Texto = styled.div`
   display: flex;
   flex-direction: column;
+  row-gap: 0.5rem;
 
   h2::before {
     content: " ";

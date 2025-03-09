@@ -69,8 +69,4 @@ export const Span = styled.span`
   @media (max-width: 725px) {
     font-size: 1rem;
   }
-
-  @media (max-width: 500px) {
-    font-size: 0.9rem;
-  }
 `;

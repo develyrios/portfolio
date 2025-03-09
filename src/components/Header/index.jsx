@@ -34,17 +34,18 @@ export const Header = () => {
         </Infos>
 
         <HeaderParagrafo>
-          Quero construir um futuro que{" "}
-          <HeaderNegrito>minha existência</HeaderNegrito> seja{" "}
-          <HeaderNegrito>inevitável</HeaderNegrito>. Vem comigo?
+          Resolvo problemas de forma <strong>multidisciplinar</strong> e{" "}
+          <strong>criativa</strong>, tendo <strong>comunicação</strong> e{" "}
+          <strong>inteligência emocional</strong> como pilares. Vamos nos
+          conectar?
         </HeaderParagrafo>
 
         <Links>
-          <li>
+          {/* <li>
             <a href="#" className="b16" target="blank">
               <img src={curriculo} alt="(Abre uma nova guia)" /> Currículo
             </a>
-          </li>
+          </li> */}
           <li>
             <a
               href="https://www.linkedin.com/in/bevfeitosa"

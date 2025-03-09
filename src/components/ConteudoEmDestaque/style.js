@@ -19,6 +19,10 @@ export const Container = styled.section`
       height: 1.25rem;
     }
   }
+
+  h3 {
+    max-width: 15ch;
+  }
 `;
 
 export const Conteudo = styled.div`
@@ -67,7 +71,7 @@ export const Post = styled.li`
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: auto auto 1fr;
-  align-items: end;
+  align-items: center;
   column-gap: 1rem;
   row-gap: 0.5rem;
 

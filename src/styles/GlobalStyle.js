@@ -75,6 +75,14 @@ export default createGlobalStyle`
         border-radius: 2rem;
     }
 
+    .background:nth-child(odd) strong {
+        color: var(--verde-neon);
+    }
+
+    .background:nth-child(even) strong {
+        color: var(--azul-bebe);
+    }
+
     a {
         text-decoration: none;
         color: var(--branco);

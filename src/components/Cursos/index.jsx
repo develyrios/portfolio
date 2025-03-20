@@ -1,83 +1,84 @@
-import { Span, Title1, Title2 } from "../../styles/Text"
-import { Container, CursosGroup, CursoBox, TextRow } from "./style"
-import { FaHtml5, FaCss3Alt, FaReact, FaJava, FaGraduationCap } from "react-icons/fa"
-import { SiJavascript, SiTypescript } from "react-icons/si"
-import iconTAL from "../../assets/icon-todas.svg"
-import iconAlura from "../../assets/icon-alura.svg"
-
-
+import { Titulo1 } from "../../styles/Text";
+import { Container } from "./style";
+import { Curso } from "../Curso";
+import universeDesktop from "../../assets/mockup-desktop-universe.svg";
+import universeMobile from "../../assets/mockup-mobile-universe.svg";
+import descompinDesktop from "../../assets/mockup-desktop-descompin.svg";
+import descompinMobile from "../../assets/mockup-mobile-descompin.svg";
+import aquiexpressDesktop from "../../assets/mockup-desktop-aquiexpress.svg";
+import aquiexpressMobile from "../../assets/mockup-mobile-aquiexpress.svg";
+import adopetDesktop from "../../assets/mockup-desktop-adopet.svg";
+import adopetMobile from "../../assets/mockup-mobile-adopet.svg";
+import atividadesDesktop from "../../assets/mockup-desktop-atividades-tal.svg";
+import atividadesMobile from "../../assets/mockup-mobile-atividades-tal.svg";
 
 export const Cursos = () => {
-    return (
-        <Container className="border-major border-shadow-major">
-            <Title1>Cursos</Title1>
+  return (
+    <Container className="background b32">
+      <Titulo1>Cursos e Certificações</Titulo1>
+      <ul>
+        <Curso
+          nome="Mentoria Front-End"
+          instituicao="DiversificaDev"
+          ano="2024 / 2025"
+          descricao="Ministrei curso de 10 aulas de HTML e CSS básicos com atividades semanais. Ao final do curso foi proposto o projeto 'universe' para alunos reproduzirem."
+          stacks="HTML e CSS"
+          imgDesktop={universeDesktop}
+          imgMobile={universeMobile}
+        />
 
-            <CursosGroup>
-                <CursoBox className="border-minor border-shadow-minor">
-                    <Title2>React School</Title2>
+        <Curso
+          nome="Fundamentos de FrontEnd Development"
+          instituicao="Descomplica"
+          ano="2023"
+          descricao="Curso de Desenvolvimento Web com disciplinas extras como Projeto de Vida, Desing Thinking, UX e Metodologias Ágeis. No curso foi desenvolvido um projeto estilo Pinterest explorando React Router DOM e Local Storage"
+          stacks="React e React Bootstrap"
+          imgDesktop={descompinDesktop}
+          imgMobile={descompinMobile}
+          nomeDoProjeto="Descompin"
+          link="https://bev-descompin.vercel.app/"
+          repositorio="https://github.com/develyrios/descompin"
+        />
 
-                    <TextRow>
-                        <img src="https://s3-sa-east-1.amazonaws.com/prod-jobsite-files.kenoby.com/uploads/mjv-1585853217-logo-header-10png.png"/>
-                        <Span>MJV Innovation & Technology</Span>
-                    </TextRow>
+        <Curso
+          nome="React School"
+          instituicao="MJV Innovation & Technology"
+          ano="2022"
+          descricao="Curso de React em que, paralelo às aulas, foi desenvolvido um site de E-Commerce feito em grupo, aproximando a experiência do curso de uma experiência profissional."
+          stacks="TypeScript e React"
+          imgDesktop={aquiexpressDesktop}
+          imgMobile={aquiexpressMobile}
+          nomeDoProjeto="Aquiexpress"
+          link="https://aquiexpress.vercel.app/"
+          repositorio="https://github.com/mjvturma07/ProjetoMJV"
+        />
 
-                    <TextRow>
-                        <FaReact />
-                        <SiTypescript />
-                    </TextRow>
-                </CursoBox>
-                
-                <CursoBox className="border-minor border-shadow-minor">
-                    <Title2>Java School</Title2>
+        <Curso
+          nome="Formação Front-End"
+          instituicao="Alura"
+          ano="2022"
+          descricao="Curso de Front-End da Alura em que desenvolvi um site de adoção de pets, feito em mobile-first e a partir de um layout disponibilizado pela instituição."
+          stacks="HTML, CSS e JavaScript"
+          imgDesktop={adopetDesktop}
+          imgMobile={adopetMobile}
+          nomeDoProjeto="Adopet"
+          link="https://adopets-develyrios.vercel.app/"
+          repositorio="https://github.com/develyrios/adopet"
+        />
 
-                    <TextRow>
-                        <img src="https://s3-sa-east-1.amazonaws.com/prod-jobsite-files.kenoby.com/uploads/mjv-1585853217-logo-header-10png.png"/>
-                        <Span>MJV Innovation & Technology</Span>
-                    </TextRow>
-
-                    <FaJava />
-                </CursoBox>
-
-                <CursoBox className="border-minor border-shadow-minor">
-                    <Title2>Imersão Frontend</Title2>
-
-                    <TextRow>
-                        <img src={iconTAL} />
-                        <Span>Todas as Letras</Span>
-                    </TextRow>
-
-                    <TextRow>
-                        <FaHtml5 />
-                        <FaCss3Alt />
-                        <SiJavascript />
-                    </TextRow>
-                </CursoBox>
-
-                <CursoBox className="border-minor border-shadow-minor">
-                    <Title2>Formação Frontend</Title2>
-
-                    <TextRow>
-                        <img src={iconAlura} />
-                        <Span>Alura</Span>
-                    </TextRow>
-
-                    <TextRow>
-                        <FaHtml5 />
-                        <FaCss3Alt />
-                        <SiJavascript />
-                    </TextRow>
-                </CursoBox>
-
-                <CursoBox className="border-minor border-shadow-minor">
-                    <Title2>Engenharia de Materiais</Title2>
-                    <Span>Universidade Federal do Cariri</Span>
-                    <TextRow>
-                        <FaGraduationCap />
-                        <Span>Graduação</Span>
-                    </TextRow>
-                </CursoBox>
-
-            </CursosGroup>
-        </Container>
-    )
-}
+        <Curso
+          nome="Imersão Front-End"
+          instituicao="Todas as Letras"
+          ano="2022"
+          descricao="Curso introdutório de Front-End onde tive meu primeiro contato com a área. Nele, fiz várias atividades que juntei em um projeto final feito com Bootstrap"
+          stacks="HTML, CSS e JavaScript"
+          imgDesktop={atividadesDesktop}
+          imgMobile={atividadesMobile}
+          nomeDoProjeto="Atividades"
+          link="https://central-atividades-front-end.vercel.app/"
+          repositorio="https://github.com/develyrios/imersao-front-end"
+        />
+      </ul>
+    </Container>
+  );
+};
